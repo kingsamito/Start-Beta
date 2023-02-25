@@ -1,0 +1,636 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 70px;
+    background-color: #FFFFFF;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'AirbnbCereal_W_Bd';
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name img {
+    height: 25px;
+}
+
+.logo-name h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    color: #121212;
+    margin-left: 5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.nav-links p {
+    font-style: normal;
+    font-size: 15px;
+    color: #3F3F3F;
+}
+
+.nav-links .active {
+    font-weight: 700;
+    color: #3BAA67;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-button button:first-child {
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: none;
+    color: #3F3F3F;
+    background: transparent;
+}
+
+.nav-button button:nth-child(2) {
+    padding: 8px 15px;
+    background: #3BAA67;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.nav-button button:last-child {
+    padding: 0;
+    margin-left: -25px;
+    border: none;
+    color: #3F3F3F;
+    background-color: #FFFFFF;
+}
+
+.nav-drop-down {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    right: 90px;
+    background-color: #eee;
+    padding: 10px 20px;
+    gap: 12px;
+}
+
+.nav-drop-down button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-drop-down img {
+    height: 50px;
+}
+
+/** Hero **/
+.hero-button-container button:nth-child(2) {
+    display: none;
+}
+
+.hero-text-img img {
+    display: none;
+}
+
+.hero-img img {
+    display: none;
+}
+
+
+
+/** Frame 1 **/
+.frame1 .hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.frame1 .hero-text {
+    max-width: 55%;
+    font-family: 'AirbnbCereal_W_Bk';
+    margin-top: 80px;
+    position: relative;
+}
+
+.frame1 .hero-text-img img:nth-child(1) {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    z-index: -1;
+    height: 20px;
+}
+
+.frame1 .hero-text h1 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 105%;
+    color: #3F3F3F;
+}
+
+.frame1 .hero-text p {
+    margin: 0;
+    max-width: 70%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: rgba(18, 18, 18, 0.6);
+}
+
+.frame1 .hero-button-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.frame1 .hero-button-container button {
+    padding: 7px 15px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 125%;
+    border-radius: 8px;
+}
+
+.frame1 .hero-button-container button:first-child {
+    background-color: #3BAA67;
+    color: #FFFFFF;
+    border: none;
+}
+
+.frame1 .hero-button-container button:last-child {
+    border: 1px solid #3BAA67;
+    color: #3BAA67;
+    background-color: #FFFFFF;
+}
+
+.frame1 .hero-img img:nth-child(1) {
+    display: block;
+    height: 425px;
+}
+
+/** Frame 2 **/
+.frame2 .hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frame2 .hero-text {
+    max-width: 67%;
+    font-family: 'AirbnbCereal_W_Bk';
+    margin-top: 40px;
+    position: relative;
+}
+
+.frame2 .hero-text span::before {
+    content: "\a";
+    white-space: pre;
+}
+
+.frame2 .hero-text-img img:nth-child(1) {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 125px;
+    z-index: -1;
+    height: 20px;
+}
+
+.frame2 .hero-text h1 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 105%;
+    color: #3F3F3F;
+    text-align: center;
+}
+
+.frame2 .hero-text p {
+    margin: 10px auto;
+    max-width: 58%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: rgba(18, 18, 18, 0.6);
+    text-align: center;
+}
+
+.frame2 .hero-button-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.frame2 .hero-button-container button {
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 125%;
+    border-radius: 8px;
+}
+
+.frame2 .hero-button-container button:first-child {
+    background-color: #3BAA67;
+    color: #FFFFFF;
+    border: none;
+}
+
+.frame2 .hero-button-container button:last-child {
+    border: 1px solid #3BAA67;
+    color: #3BAA67;
+    background-color: #FFFFFF;
+}
+
+.frame2 .hero-img img:nth-child(2) {
+    display: block;
+    height: 300px;
+}
+
+/** Frame 3 **/
+.frame3 .hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.frame3 .hero-text {
+    max-width: 55%;
+    font-family: 'AirbnbCereal_W_Bk';
+    margin-top: 100px;
+    position: relative;
+}
+
+.frame3 .hero-text-img img:nth-child(2) {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    z-index: -1;
+    height: 180px;
+}
+
+.frame3 .hero-text h1 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 105%;
+    color: #3F3F3F;
+}
+
+.frame3 .hero-text p {
+    margin: 0;
+    max-width: 70%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: rgba(18, 18, 18, 0.6);
+}
+
+.frame3 .hero-button-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.frame3 .hero-button-container button {
+    padding: 7px 15px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 125%;
+    border-radius: 8px;
+}
+
+.frame3 .hero-button-container button:first-child {
+    background-color: #3BAA67;
+    color: #FFFFFF;
+    border: none;
+}
+
+.frame3 .hero-button-container button:last-child {
+    border: 1px solid #3BAA67;
+    color: #3BAA67;
+    background-color: #FFFFFF;
+}
+
+.frame3 .hero-img img:nth-child(3) {
+    display: block;
+    height: 400px;
+    margin-top: 50px;
+    margin-right: 25px;
+}
+
+
+/** Frame 4 **/
+.frame4 .hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.frame4 .hero-text {
+    max-width: 45%;
+    font-family: 'Poppins';
+    margin-top: 80px;
+    position: relative;
+}
+
+.frame4 .hero-text-img img:nth-child(3) {
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: -50px;
+    z-index: -1;
+    height: 360px;
+}
+
+.frame4 .hero-text h1 {
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 72px;
+    color: #121212;
+}
+
+.frame4 .hero-text h1 span:first-child::before {
+    content: "\a";
+    white-space: pre;
+}
+
+.frame4 .hero-text h1 span:last-child {
+    font-weight: bolder;
+}
+
+.frame4 .hero-text p {
+    margin: 0;
+    max-width: 90%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: rgba(18, 18, 18, 0.6);
+}
+
+.frame4 .hero-button-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 60px;
+}
+
+.frame4 .hero-button-container button {
+    padding: 11px 22px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 125%;
+    border-radius: 8px;
+}
+
+.frame4 .hero-button-container button:first-child {
+    background-color: #6AB547;
+    color: #FFFFFF;
+    border: none;
+}
+
+.frame4 .hero-button-container button:nth-child(2) {
+    display: block;
+    border: none;
+    color: #6AB547;
+    background: rgba(106, 181, 71, 0.11);
+}
+
+.frame4 .hero-button-container button:last-child {
+    display: none;
+}
+
+.frame4 .hero-img img:nth-child(4) {
+    display: block;
+    height: 425px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+
+/**Footer**/
+.school-icon.f3,.school-icon.f4 {
+    display: none;
+}
+
+/** Frame 1 Footer **/
+.frame1 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'AirbnbCereal_W_Md';
+    margin-top: 15px;
+}
+
+.frame1 .footer .footer-icon-text {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.frame1 .footer .footer-icon-text:last-child {
+    margin-right: 60px;
+}
+
+.frame1 .footer .footer-icon-text>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.frame1 .footer .footer-icon-text>div span:first-child {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #3F3F3F;
+}
+
+.frame1 .footer .footer-icon-text>div span:last-child {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #3F3F3F;
+}
+
+.frame1 .school-icon {
+    color: #3BAA67;
+    font-size: xx-large !important;
+}
+
+/** Frame 2 Footer **/
+.frame2 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'AirbnbCereal_W_Md';
+    margin-top: 15px;
+    padding: 15px 0;
+}
+
+.frame2 .footer .footer-icon-text {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.frame2 .footer .footer-icon-text:last-child {
+    margin-right: 60px;
+}
+
+.frame2 .footer .footer-icon-text>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.frame2 .footer .footer-icon-text>div span:first-child {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #3F3F3F;
+}
+
+.frame2 .footer .footer-icon-text>div span:last-child {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #3F3F3F;
+}
+
+.frame2 .school-icon {
+    color: #F4A261;
+    font-size: xx-large !important;
+}
+
+/** Frame 3 Footer **/
+.frame3 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'AirbnbCereal_W_Md';
+    margin-top: 30px;
+}
+
+.frame3 .footer .footer-icon-text {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.frame3 .footer .footer-icon-text:last-child {
+    margin-right: 60px;
+}
+
+.frame3 .footer .footer-icon-text>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.frame3 .footer .footer-icon-text>div span:first-child {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #3F3F3F;
+}
+
+.frame3 .footer .footer-icon-text>div span:last-child {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #3F3F3F;
+}
+
+.frame3 .school-icon {
+    color: #3BAA67;
+    font-size: xx-large !important;
+}
+
+.frame3 .school-icon.fo {
+    display: none !important;
+}
+
+.frame3 .school-icon.f3 {
+    display: block !important;
+}
+
+
+
+/** Frame 4 Footer **/
+.frame4 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #121212;
+}
+
+.frame4 .footer .footer-icon-text {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: #f1f1f1;
+    padding: 20px 40px;
+}
+
+.frame4 .footer-icon-text.fo {
+    display: none;
+}
+
+.frame4 .footer .footer-icon-text:last-child {
+    margin-right: 20px;
+}
+
+.frame4 .footer .footer-icon-text>div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.frame4 .school-icon {
+    color: #3BAA67;
+    font-size: xx-large !important;
+}
+
+.frame4 .school-icon.fo {
+    display: none !important;
+}
+
+.frame4 .school-icon.f4 {
+    display: block !important;
+}
